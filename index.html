@@ -3,15 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>55-dars. Bootstrap. container va boshqa umumiy masalalar</title>
+  <title>Check password</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Livvic:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="bg-dark">
   
- 
+  <div class="container d-flex flex-column ">
+    <form class="js-password-form d-flex my-2 align-items-center justify-content-center" action="https://echo.htmlacademy.ru" method="POST">
+      <input class="js-password-input form-control mx-5 w-50" type="password" placeholder="Password">
+      <button class="js-password-btn btn btn-warning">Send</button>
+    </form>
+    
+    <div class="js-danger alert-danger alert d-inline-block my-2 mx-auto">Javob xato : ((</div>
+    <div class="js-success alert-success alert d-inline-block my-2 mx-auto">Javob to'gri : )) , lekin boshqa hech narsa yo'q</div>
+    
+    <div class="js-attemps-box alert-success alert d-inline-block mx-auto">Sizning imkoniyatlaringiz <span class="js-attempts"></span> ta</div>
+    
+    <button class="js-make-attemp btn btn-success align-self-center d-none">Imkoniyat bering , iltimos 🥺</button>
+    
+  </div>
+  
   <script src="js/jquery-3.5.1.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/scripts.js"></script>
